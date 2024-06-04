@@ -13,15 +13,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: 0;
 }
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 0;
-  margin: 0;
-  color: var(--primary-text-color);
-  background-color: #f5f5f5;
 }
 
 h1, h2, h3, h4, h5, strong {
@@ -42,9 +38,8 @@ a {
 }
 
 .main-container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -52,6 +47,7 @@ a {
     width: 90%;
   }
 }
+
 
 /* Section title */
 .section-title {
@@ -129,9 +125,9 @@ a {
 /* Hero section styles */
 #hero {
   background-color: var(--secondary-bg-color);
-  height: 720px;
+  height: 500px;
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
   align-items: center;
 }
 
@@ -140,6 +136,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   margin: 0.5rem 0 1rem;
+
 }
 
 .hero-p {
@@ -147,11 +144,12 @@ a {
   color: var(--secondary-text-color);
   font-size: 1rem;
   margin-bottom: 2rem;
+  margin-left: 0;
   line-height: 1.5;
 }
 
 .hero-kiri img {
-  width: 75%;
+  width: 55%;
 }
 
 .hero-kiri {
@@ -176,6 +174,12 @@ a {
   .hero-kiri img {
     width: 70%;
   }
+}
+
+.hero-kanan {
+padding: 1rem;
+border-radius: var(--item-border-radius);
+margin-right: 1rem;
 }
 
 /* About section styles */
