@@ -8,6 +8,7 @@
 
   :root {
     --section-padding: 2rem 0;
+    --primary-bg-color: #271f58;
   }
 
   p {
@@ -17,39 +18,85 @@
 
 
   /* Navbar */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .nav-links {
-    display: flex;
+    position: fixed;
+    width: 30%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    display: flex; 
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+    background: var(--primary-bg-color);
+    opacity: 0.9; 
+    border-left: 1px solid var(--hover-color);
+    z-index: 9;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-links ul {
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .nav-link {
-    margin: 10px;
+  .nav-links li{
+    padding: 2rem;
+
   }
+  
+  .nav-links.active {
+    transform: translateX(0);
+  }
+  
+  .menu-icon {
+    display: block;
+    z-index: 20; /* Ensure it's clickable above other elements */
+  }
+  
 
   /* Hero Section */
-  .hero {
-    flex-direction: column;
-    align-items: center;
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
+    height: auto;
   }
-
+  
+  .hero-kanan,
   .hero-kiri {
-    display: none;
-  }
-
-  .hero-kanan {
     margin-top: 20px;
-    align-items: left;
+  }
+  
+  .hero-name,
+  .hero-p {
+    font-size: 3rem;
+  }
+  
+  .hero-p {
+    font-size: 0.8rem;
+  }
+  
+  .hero-kiri {
+    text-align: right;
+  }
+  
+  .hero-kanan {
     text-align: left;
   }
-
+  
+  .hero-kiri img {
+    width: 70%;
+    display: block;
+    margin: 0 auto; /* Mengatur gambar ke tengah */
+  }
+  
+  
   /* About section */
   #about-section {
     padding: 10px;
@@ -85,31 +132,8 @@
 
   /* Founders Section */
   #founders {
-    margin:0;
+   display:none;
   }
-  .founder-container {
-    grid-template-columns: 1fr;
-  }
-
-  .founder-kiri {
-    margin-bottom: 0;
-    padding: 0;
-  }
-
-  .kiri h2{
-    display: none;
-    margin: 0;
-  }
-
-  .kiri img{
-    display: none;
-  }
-
-  .founder-kanan {
-    margin-top: 0;
-    padding: 0;
-  }
-
   /* Slider */
   .slider-container {
     display: flex;
@@ -119,6 +143,11 @@
   }
 
   /* Contact Section */
+
+#contact {
+  background-color: var(--primary-bg-color);
+}
+
 .contact {
   margin:1rem;
 }
@@ -145,21 +174,22 @@
   .form-group input,
   .form-group textarea {
     font-size: 1rem;
+    background-color: var(--secondary-bg-color);
   }
 
   .submit-button {
     font-size: 0.9rem;
+    background-color: var(--secondary-bg-color);
   }
-}
 
   .contact-form {
     width: 100%;
   }
-}
+
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: var(--primary-bg-color);
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -167,4 +197,6 @@ footer {
 
 footer p {
   margin: 0;
+}
+
 }
