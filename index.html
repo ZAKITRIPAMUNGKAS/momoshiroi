@@ -8,47 +8,145 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
+  <script src="main.js"></script>
   <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="#">MOMOSHIROI</a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">ABOUT</a></li>
-          <li><a href="#events" class="nav-link">EVENTS</a></li>
-          <li><a href="#founders" class="nav-link">FOUNDERS</a></li>
-          <li><a href="#contact" class="nav-link">CONTACT</a></li>
-        </ul>
-      </nav>
-      <!-- hero -->
-      <section id="hero">
-        <div class="hero-kiri">
-          <img src="image/logo.gif" alt="MOMOSHIROI Logo">
-        </div>
-        <div class="hero-kanan">
-          <h3 class="pre-title">Welcome To Our World</h3>
-          <h1 class="hero-name">
-            MOMOSHIROI
-          </h1>
-          <p class="hero-p">
-            <i>
-              Momoshiroi terbentuk dari suatu kelompok orang yang mempunyai hobi cosplay jejepangan, di mana mereka merencanakan pembentukan suatu komunitas, dan setelah hasil diskusi dari mereka akhirnya komunitas Momoshiroi terbentuk.
-            </i>
-          </p>
-        </div>
-      </section>
-      <!-- end hero -->
-
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">MOMOSHIROI</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#events" class="nav-link">EVENTS</a></li>
+        <li><a href="#founders" class="nav-link">FOUNDERS</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-kiri">
+        <img src="image/logo.gif" alt="MOMOSHIROI Logo">
+      </div>
+      <div class="hero-kanan">
+        <h3 class="pre-title">Welcome To Our World</h3>
+        <h1 class="hero-name">MOMOSHIROI</h1>
+        <p class="hero-p">
+          <i>
+            Momoshiroi terbentuk dari suatu kelompok orang yang mempunyai hobi cosplay jejepangan, di mana mereka merencanakan pembentukan suatu komunitas, dan setelah hasil diskusi dari mereka akhirnya komunitas Momoshiroi terbentuk.
+          </i>
+        </p>
+      </div>
+    </section>
+    <!-- end hero -->
   </header>
 
   <!-- About section -->
   <section id="about">
     <div class="main-container">
-        <h2 class="pre-title">About Us</h2>
-        <p>
-          Momoshiroi is a community formed by a group of people who share a passion for Japanese cosplay. After discussing their ideas, they decided to create a community where like-minded individuals can come together and share their love for cosplay.
-        </p>  
+      <h2 class="section-title">About Us</h2>
+      <p class="about-description">
+        Momoshiroi is a community formed by a group of people who share a passion for Japanese cosplay. After discussing their ideas, they decided to create a community where like-minded individuals can come together and share their love for cosplay.
+      </p>
     </div>
   </section>
+  <!-- End About section -->
+
+  <!-- Events section -->
+  <section id="events">
+    <div class="main-container">
+      <h2 class="section-title">Our Events</h2>
+      <div class="grid-4">
+        <div class="card">
+          <img src="image/event1.jpg" alt="Event 1">
+          <p class="caption">Event 1</p>
+        </div>
+        <div class="card">
+          <img src="image/event2.jpg" alt="Event 2">
+          <p class="caption">Event 2</p>
+        </div>
+        <div class="card">
+          <img src="image/event3.jpg" alt="Event 3">
+          <p class="caption">Event 3</p>
+        </div>
+        <div class="card">
+          <img src="image/event4.jpg" alt="Event 4">
+          <p class="caption">Event 4</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Events section -->
+
+  <!-- Founders section -->
+  <section id="founders">
+    <div class="main-container">
+      <h2 class="section-title">Our Founders</h2>
+      <div class="founder-container">
+        <div class="founder-kiri">
+          <div class="kiri">
+            <h2 class="founder-name">UZUMAKI NARUTO</h2>
+            <p> <i>Leader</i></p>
+          </div>
+          <div class="kiri">
+            <h2 class="founder-name">UZUMAKI NARUTO</h2>
+            <p> <i>Leader</i></p>
+          </div>
+          <div class="kiri">
+            <h2 class="founder-name">UZUMAKI NARUTO</h2>
+            <p> <i>Leader</i></p>
+          </div>
+          <div class="kiri">
+            <h2 class="founder-name">UZUMAKI NARUTO</h2>
+            <p> <i>Leader</i></p>
+          </div>
+        </div>
+        <div class="founder-kanan">
+          <div class="slider-container">
+            <button class="prev-button" onclick="slideLeft()">&#10094;</button>
+            <div class="image-slider">
+              <img src="image/pengurus1.jpg" alt="Image 1" class="slider-image">
+              <img src="image/pengurus2.jpg" alt="Image 2" class="slider-image">
+              <img src="image/pengurus3.jpg" alt="Image 3" class="slider-image">
+            </div>
+            <button class="next-button" onclick="slideRight()">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Founders section -->
+
+  <!-- Contact Us section -->
+  <section id="contact">
+    <div class="main-container">
+      <div class="contact-content">
+        <h2 class="section-title">Contact Us</h2>
+        <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Us section -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="main-container">
+      <p>&copy; 2024 Momoshiroi. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
 </body>
 </html>
