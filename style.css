@@ -310,24 +310,39 @@ a:hover {
 }
 
 .founder-name {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   transition: transform 0.3s ease;
   margin-bottom: 0;
 }
 
+.kiri {
+float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
 .kiri p {
   font-size: 1.2rem;
   line-height: 1.5;
+  text-align-last: left;
 }
+
+.kiri img {
+  width: 20%;
+  height: 20%;
+  float: left;
+  margin-right: 10px; 
+}
+
 
 .founder-name:hover {
   transform: scale(1.05);
 }
 
 .founder-kanan img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: var(--item-border-radius);
   transition: transform 0.3s ease;
