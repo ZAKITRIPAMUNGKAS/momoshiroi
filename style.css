@@ -317,9 +317,9 @@ a:hover {
 }
 
 .kiri {
-float: left;
-  width: 33.33%;
-  padding: 5px;
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal */
 }
 
 .kiri p {
