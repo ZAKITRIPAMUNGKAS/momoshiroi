@@ -1,0 +1,170 @@
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+  .section-title {
+    font-size: 2rem;
+    margin: 0.6rem 0 2.5rem;
+  }
+
+  :root {
+    --section-padding: 2rem 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav-link {
+    margin: 10px;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-kiri {
+    display: none;
+  }
+
+  .hero-kanan {
+    margin-top: 20px;
+    align-items: left;
+    text-align: left;
+  }
+
+  /* About section */
+  #about-section {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-description {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 10px;
+  }
+
+  /* Events Section */
+
+  #events {
+    align-items: center;
+    text-align: center;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 0.5rem;
+  }
+
+  .caption {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 5px);
+  }
+
+  /* Founders Section */
+  #founders {
+    margin:0;
+  }
+  .founder-container {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-kiri {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .kiri h2{
+    display: none;
+    margin: 0;
+  }
+
+  .kiri img{
+    display: none;
+  }
+
+  .founder-kanan {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  /* Slider */
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid var(--secondary-bg-color);
+  }
+
+  /* Contact Section */
+.contact {
+  margin:1rem;
+}
+
+  .contact-content {
+    margin-top: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-content h2 {
+    margin: 1rem;
+  }
+
+  .contact-content p{
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: small;
+    text-align: left;
+  }
+
+
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+  }
+}
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
