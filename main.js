@@ -6,35 +6,43 @@ document.addEventListener('DOMContentLoaded', function () {
   const slides = document.querySelectorAll('.slider-image');
   let currentIndex = 0;
 
-  // Set the width of the slider to match the number of slides
-  slider.style.width = `${slides.length * 100}%`;
-  slides.forEach(slide => {
-    slide.style.width = `${100 / slides.length}%`;
-  });
+  // Ensure elements exist before accessing them
+  if (slider && slides.length > 0) {
+    slider.style.width = `${slides.length * 100}%`;
+    slides.forEach(slide => {
+      slide.style.width = `${100 / slides.length}%`;
+    });
 
-  prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSliderPosition();
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSliderPosition();
+        }
+      });
     }
-  });
 
-  nextButton.addEventListener('click', () => {
-    if (currentIndex < slides.length - 1) {
-      currentIndex++;
-      updateSliderPosition();
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+          updateSliderPosition();
+        }
+      });
     }
-  });
 
-  function updateSliderPosition() {
-    slider.style.transform = `translateX(-${currentIndex * 100 / slides.length}%)`;
+    function updateSliderPosition() {
+      slider.style.transform = `translateX(-${currentIndex * 100 / slides.length}%)`;
+    }
   }
 
   // Burger menu functionality
   const menuIcon = document.getElementById('menu-icon');
   const navLinks = document.getElementById('nav-links');
 
-  menuIcon.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+  if (menuIcon && navLinks) {
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 });
