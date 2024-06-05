@@ -1,64 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsif.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsif.css" />
     <title>founders</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-          <div class="logo">
-            <a href="index.html">MOMOSHIROI</a>
-          </div>
-           <div class="menu-icon" id="menu-icon">
-          &#9776; </div>
-          <ul class="nav-links" id="nav-links">
-            <li><a href="abaout.html" class="nav-link">ABOUT</a></li>
-            <li><a href="events.html" class="nav-link">EVENTS</a></li>
-            <li><a href="founders.html" class="nav-link">FOUNDERS</a></li>
-            <li><a href="#contact" class="nav-link">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section id="founders">
-        <div class="main-container">
-          <h2 class="section-title">Our Founders</h2>
-          <div class="founder-container">
-            <div class="founder-kiri">
-              <div class="kiri">
-                <img src="image/Desain tanpa judul (3).png" alt="profil">
-                <h2 class="founder-name">UZUMAKI NARUTO SUPRI</h2>
-              </div>
-              <div class="kiri">
-                <img src="image/Desain tanpa judul (4).png" alt="profil">
-                <h2 class="founder-name">UZUMAKI NARUTO DONI</h2>
-              </div>
-              <div class="kiri">
-                <img src="image/Desain tanpa judul (5).png" alt="profil">
-                <h2 class="founder-name">UZUMAKI NARUTO AGUS</h2>
-              </div>
-              <div class="kiri">
-                <img src="image/Desain tanpa judul (6).png" alt="profil">
-                <h2 class="founder-name">UZUMAKI NARUTO SUPAT</h2>
-              </div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">MOMOSHIROI</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="abaout.html" class="nav-link">ABOUT</a></li>
+          <li><a href="events.html" class="nav-link">EVENTS</a></li>
+          <li><a href="founders.html" class="nav-link">FOUNDERS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="founders">
+      <div class="main-container">
+        <h2 class="section-title">Our Founders</h2>
+        <div class="founder-container">
+          <div class="founder-kiri">
+            <div class="kiri">
+              <img src="image/Desain tanpa judul (3).png" alt="profil" />
+              <h2 class="founder-name">UZUMAKI NARUTO SUPRI</h2>
             </div>
-            <div class="founder-kanan">
-              <div class="slider-container">
-                <button class="prev-button" onclick="slideLeft()">&#10094;</button>
-                <div class="image-slider">
-                  <img src="image/pengurus1.jpg" alt="Image 1" class="slider-image">
-                  <img src="image/pengurus2.jpg" alt="Image 2" class="slider-image">
-                  <img src="image/pengurus3.jpg" alt="Image 3" class="slider-image">
-                </div>
-                <button class="next-button" onclick="slideRight()">&#10095;</button>
+            <div class="kiri">
+              <img src="image/Desain tanpa judul (4).png" alt="profil" />
+              <h2 class="founder-name">UZUMAKI NARUTO DONI</h2>
+            </div>
+            <div class="kiri">
+              <img src="image/Desain tanpa judul (5).png" alt="profil" />
+              <h2 class="founder-name">UZUMAKI NARUTO AGUS</h2>
+            </div>
+            <div class="kiri">
+              <img src="image/Desain tanpa judul (6).png" alt="profil" />
+              <h2 class="founder-name">UZUMAKI NARUTO SUPAT</h2>
+            </div>
+          </div>
+          <div class="founder-kanan">
+            <div class="slider-container">
+              <button class="prev-button" onclick="slideLeft()">
+                &#10094;
+              </button>
+              <div class="image-slider">
+                <img
+                  src="image/pengurus1.jpg"
+                  alt="Image 1"
+                  class="slider-image"
+                />
+                <img
+                  src="image/pengurus2.jpg"
+                  alt="Image 2"
+                  class="slider-image"
+                />
+                <img
+                  src="image/pengurus3.jpg"
+                  alt="Image 3"
+                  class="slider-image"
+                />
               </div>
+              <button class="next-button" onclick="slideRight()">
+                &#10095;
+              </button>
             </div>
           </div>
         </div>
-      </section>
-        <script src="main.js"></script>
-</body>
+      </div>
+    </section>
+    <!-- Contact Us section -->
+    <section id="contact">
+      <div class="main-container">
+        <div class="contact-content">
+          <h2 class="section-title">Contact Us</h2>
+          <p>
+            If you have any questions or would like to get in touch, please fill
+            out the form below:
+          </p>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Us section -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="main-container">
+        <p>&copy; 2024 Momoshiroi. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="main.js"></script>
+  </body>
 </html>
