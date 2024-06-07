@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styleadmin.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <h2>Admin Dashboard</h2>
+      <div class="news-section">
+        <h3>Update Berita</h3>
+        <form id="news-form">
+          <div class="input-group">
+            <label for="news-title">Judul:</label>
+            <input type="text" id="news-title" name="news-title" required />
+          </div>
+          <div class="input-group">
+            <label for="news-content">Konten:</label>
+            <textarea
+              id="news-content"
+              name="news-content"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Update Berita</button>
+        </form>
+      </div>
+      <div class="password-section">
+        <h3>Kelola ID & Kata Sandi Admin</h3>
+        <form id="admin-credentials-form">
+          <div class="input-group">
+            <label for="admin-id">ID Admin:</label>
+            <input type="text" id="admin-id" name="admin-id" required />
+          </div>
+          <div class="input-group">
+            <label for="admin-password">Kata Sandi Baru:</label>
+            <input
+              type="password"
+              id="admin-password"
+              name="admin-password"
+              required
+            />
+          </div>
+          <button type="submit">Perbarui</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
